@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+<body>
+    <section class="login-section opacity-high h-100 addadeal">
+            <div class="container h-100">
+                <div class="inner-container">
+                    <div class="mobile-logo-account">
+                        <img src="./assets/images/logo.png" alt="">
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/Group 2888.png" alt="">
+                    </div>
+                    <div class="main-heading">
+                        <h1>Add a deal</h1>
+                    </div>
+                    <div class="row">
+                        <div class="form-creataccount">
+                            <div class="form-box">
+                                <input type="text" class="form-control" placeholder="Deal Name ">
+                                <div class="select">
+                                    <div class="wrapper-dropdown" id="dropdown">
+                                        <span class="selected-display" id="destination">Category</span>
+                                        <img src="./assets/images/Path 4117.png" alt="" class="arrow" width="16" height="12">
+                                        <ul class="dropdown">
+                                          <li class="item">Option 1</li>
+                                          <li class="item">Option 2</li>
+                                          <li class="item">Option 3</li>
+                                          <li class="item">Option 4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Price">
+                            </div>
+                            <div class="image-galry">
+                                <div class="img-prev">
+                                    <div class="avatar-upload">
+                                        <div class="avatar-edit">
+                                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                            <label for="imageUpload">
+                                                <img src="./assets/images/logo.png" alt="">
+                                                <span >Upload Profile Photo</span>
+                                            </label>
+                                        </div>
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <textarea name="msg" id="" cols="30" rows="10" placeholder="Meal Description" class="form-control"></textarea>
+                        </div>
+                        <div class="items-box">
+                            <div class="item-container">
+                                <div class="heading">
+                                    <h3>Allergens</h3>
+                                </div>
+                                <div class="items">
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox1" />
+                                        <label for="myCheckbox1">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3302" data-name="Group 3302" transform="translate(-19.904 -2.251)">
+                                              <path id="Path_4143" data-name="Path 4143" d="M56.1,20.3,53.2,15.22v-2.8a.751.751,0,0,0-.75-.75H44.2a.751.751,0,0,0-.75.75v2.761l-3.612,5.057a.877.877,0,0,0-.049.1c-.013.026-.027.05-.038.077a.74.74,0,0,0-.053.264V34.929a.75.75,0,0,0,.75.75H55.451a.751.751,0,0,0,.75-.75V20.672a.745.745,0,0,0-.1-.372m-4.4-5.631H44.946v-1.5H51.7ZM41.194,34.178V21.422h4.5a.75.75,0,1,0,0-1.5H41.9l2.68-3.752h6.575L48.8,20.3a.745.745,0,0,0-.1.372V34.178Zm13.507,0H50.2V20.871l2.251-3.94,2.251,3.94Z" transform="translate(-9.908 -2.912)" fill="#d0e2f6"/>
+                                              <line id="Line_33" data-name="Line 33" y1="26.263" x2="26.08" transform="translate(26.032 8.754)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              <ellipse id="Ellipse_26" data-name="Ellipse 26" cx="18.384" cy="18.384" rx="18.384" ry="18.384" transform="translate(20.404 2.751)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                            </g>
+                                          </svg>                                                    
+                                          <p>Lactose Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox2" />
+                                        <label for="myCheckbox2">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3303" data-name="Group 3303" transform="translate(-109.131 -2.251)">
+                                              <path id="Path_4141" data-name="Path 4141" d="M174.164,16.895c-1.8-3.371-4.125-5.228-6.558-5.228s-4.762,1.857-6.558,5.228a21.338,21.338,0,0,0-2.446,9.4c0,5.7,3.534,9.38,9,9.38s9-3.681,9-9.38a21.348,21.348,0,0,0-2.446-9.4m-6.558,17.283c-5.533,0-7.5-4.07-7.5-7.879,0-5.186,3.362-13.132,7.5-13.132s7.5,7.946,7.5,13.132c0,3.809-1.971,7.879-7.5,7.879" transform="translate(-39.59 -2.913)" fill="#d0e2f6"/>
+                                              <path id="Path_4142" data-name="Path 4142" d="M168.854,24.667a5.253,5.253,0,1,0,5.253,5.253,5.259,5.259,0,0,0-5.253-5.253m0,9a3.752,3.752,0,1,1,3.752-3.752,3.756,3.756,0,0,1-3.752,3.752" transform="translate(-40.838 -6.158)" fill="#d0e2f6"/>
+                                              <line id="Line_32" data-name="Line 32" y1="26.263" x2="25.398" transform="translate(115.259 8.004)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              <ellipse id="Ellipse_25" data-name="Ellipse 25" cx="18.384" cy="18.384" rx="18.384" ry="18.384" transform="translate(109.631 2.751)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                            </g>
+                                          </svg>                                                    
+                                             <p>Eggs Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox3" />
+                                        <label for="myCheckbox3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3304" data-name="Group 3304" transform="translate(-198.002 0.125)">
+                                              <path id="Path_4144" data-name="Path 4144" d="M296.164,21.866l.005-.011-4.874-2.785V12.752a.741.741,0,0,0-.384-.642l.006-.01-5.253-3a.749.749,0,0,0-.744,0l-5.253,3,0,0a.752.752,0,0,0-.374.649V19.07l-4.875,2.785a.75.75,0,0,0-.378.651V29.26a.75.75,0,0,0,.378.651l5.253,3a.753.753,0,0,0,.373.1.741.741,0,0,0,.371-.1l4.88-2.788,4.88,2.788a.753.753,0,0,0,.373.1.742.742,0,0,0,.371-.1l5.253-3a.75.75,0,0,0,.378-.651V22.507a.739.739,0,0,0-.383-.641m-1.88.641-3.74,2.138-2.493-1.425-1.246-.713,1.246-.712,2.493-1.425Zm-8.242-6.318,3.752-2.144V19.07l-3.752,2.144Zm-.75-5.575,3.74,2.138-3.74,2.138L282.8,13.465l-1.246-.713Zm-5.253,9.756,2.494,1.425,1.246.712-1.159.663-2.581,1.475-3.74-2.138Zm4.5,8.455-4.5,2.572-4.5-2.572V23.8l3.752,2.144V29.26a.75.75,0,1,0,1.5,0V25.944l3.752-2.143Zm-2.968-9.307-.784-.448V14.046l3,1.715.75.428v5.025Zm13.473,9.307-4.5,2.572-4.5-2.572V23.8l3.752,2.143V29.26a.75.75,0,0,0,1.5,0V25.944l3.752-2.144Z" transform="translate(-68.405 -2.246)" fill="#d0e2f6"/>
+                                              <line id="Line_34" data-name="Line 34" y1="25.513" x2="25.513" transform="translate(204.13 6.003)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              <ellipse id="Ellipse_27" data-name="Ellipse 27" cx="18.384" cy="18.384" rx="18.384" ry="18.384" transform="translate(198.502 0.375)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                            </g>
+                                          </svg>
+                                          
+                                             <p>Sugar Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox4" />
+                                        <label for="myCheckbox4">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3305" data-name="Group 3305" transform="translate(-727.365 -639.209)">
+                                              <path id="Path_4195" data-name="Path 4195" d="M412.255,16.168a.75.75,0,1,0-.75-.75.751.751,0,0,0,.75.75" transform="translate(333.994 635.547)" fill="#d0e2f6"/>
+                                              <path id="Path_4196" data-name="Path 4196" d="M415.255,18.667a.75.75,0,1,0,.75.75.751.751,0,0,0-.75-.75" transform="translate(333.246 634.549)" fill="#d0e2f6"/>
+                                              <path id="Path_4197" data-name="Path 4197" d="M410.255,21.168a.75.75,0,1,0-.75-.75.751.751,0,0,0,.75.75" transform="translate(334.494 634.299)" fill="#d0e2f6"/>
+                                              <path id="Path_4198" data-name="Path 4198" d="M408.006,32.417a.75.75,0,1,0-.75.75.751.751,0,0,0,.75-.75" transform="translate(335.242 631.304)" fill="#d0e2f6"/>
+                                              <path id="Path_4199" data-name="Path 4199" d="M411.7,36.168a3.369,3.369,0,0,1-2.605-1.228.751.751,0,0,0-1.158.956,4.867,4.867,0,0,0,3.763,1.773.75.75,0,0,0,0-1.5" transform="translate(334.929 630.555)" fill="#d0e2f6"/>
+                                              <path id="Path_4200" data-name="Path 4200" d="M415.581,22.159a2.137,2.137,0,0,1-.374-2.488h0a6,6,0,0,0-4-8.886,6.005,6.005,0,0,0-6.452,8.788A2.057,2.057,0,0,1,404.58,22a7.458,7.458,0,0,0-2.075,5.079,7.538,7.538,0,0,0,7.276,7.594c.077,0,.153,0,.23,0a7.5,7.5,0,0,0,5.57-12.521m-1.391,9.325a5.95,5.95,0,0,1-4.364,1.693,6.105,6.105,0,0,1-5.82-6.076,5.963,5.963,0,0,1,1.659-4.06,3.547,3.547,0,0,0,.4-4.2,4.5,4.5,0,0,1,3.954-6.675,4.689,4.689,0,0,1,.9.087,4.5,4.5,0,0,1,2.989,6.661,3.629,3.629,0,0,0,.559,4.246,5.993,5.993,0,0,1-.278,8.319" transform="translate(336.241 636.545)" fill="#d0e2f6"/>
+                                              <line id="Line_46" data-name="Line 46" y1="26.132" x2="26.007" transform="translate(733.493 645.5)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              <ellipse id="Ellipse_42" data-name="Ellipse 42" cx="18.384" cy="18.384" rx="18.384" ry="18.384" transform="translate(727.865 639.709)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                            </g>
+                                          </svg>
+                                          
+                                             <p>Peanuts Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox5" />
+                                        <label for="myCheckbox5">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="57.769" height="37.769"  viewBox="0 0 57.769 37.769">
+                                            <g id="Group_3306" data-name="Group 3306" transform="translate(-803.266 -639.436)">
+                                              <path id="Path_4201" data-name="Path 4201" d="M49.64,135.168H44.249a2.237,2.237,0,0,0-4.225,0h-3.14a1.5,1.5,0,1,1,0-3H47.389a.75.75,0,1,0,0-1.5H36.884a3,3,0,1,0,0,6h3.14a2.237,2.237,0,0,0,4.225,0h3.89v5.253h-4.5a2.95,2.95,0,0,1-2.711-1.847,4.438,4.438,0,0,0-4.042-2.655.75.75,0,1,0,0,1.5,2.95,2.95,0,0,1,2.712,1.848,4.437,4.437,0,0,0,4.042,2.654H48.89a2.251,2.251,0,0,1,0,4.5H43.637a.751.751,0,0,0-.75.75c0,3.15,1.18,5.156,3.507,5.963a.768.768,0,0,0,.245.041.759.759,0,0,0,.338-.08.749.749,0,0,0,.378-.445c.585-1.852,1.162-2.477,2.286-2.477a8.254,8.254,0,0,0,0-16.508m-7.5,1.5a.75.75,0,1,1,.75-.75.751.751,0,0,1-.75.75M49.64,142v-5.329a6.761,6.761,0,0,1,6.393,4.594l-4.207,2.1A3.74,3.74,0,0,0,49.64,142M46.2,152.907a4.007,4.007,0,0,1-1.787-3.482H48.89a3.732,3.732,0,0,0,2.909-1.411l1.56,1.04a6.712,6.712,0,0,1-3.719,1.121c-1.951,0-2.857,1.233-3.44,2.731m8.35-4.862-2.061-1.374a3.36,3.36,0,0,0,.01-1.964l3.861-1.931c.02.213.032.428.032.645a6.723,6.723,0,0,1-1.843,4.623" transform="translate(786.79 516.773)" fill="#d0e2f6"/>
+                                              <line id="Line_47" data-name="Line 47" y1="25.513" x2="26.688" transform="translate(819.922 645.938)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              <path id="Path_4202" data-name="Path 4202" d="M18.384,0A18.384,18.384,0,1,1,0,18.384,18.384,18.384,0,0,1,18.384,0Z" transform="translate(814.294 639.936)" fill="none" stroke="#d0e2f6" stroke-width="1"/>
+                                            </g>
+                                          </svg>
+                                          
+                                             <p>Shellfish Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox6" />
+                                        <label for="myCheckbox6">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3307" data-name="Group 3307" transform="translate(-465.553 -728.425)">
+                                              <path id="Path_4165" data-name="Path 4165" d="M289.427,256.667a.75.75,0,1,0,.75.75.751.751,0,0,0-.75-.75" transform="translate(192.758 485.139)" fill="#d0e2f6"/>
+                                              <path id="Path_4166" data-name="Path 4166" d="M292.427,254.667a.75.75,0,1,0,.75.75.751.751,0,0,0-.75-.75" transform="translate(192.01 485.638)" fill="#d0e2f6"/>
+                                              <path id="Path_4167" data-name="Path 4167" d="M295.427,256.667a.75.75,0,1,0,.75.75.751.751,0,0,0-.75-.75" transform="translate(191.261 485.139)" fill="#d0e2f6"/>
+                                              <path id="Path_4168" data-name="Path 4168" d="M298.427,255.667a.75.75,0,1,0,.75.75.751.751,0,0,0-.75-.75" transform="translate(190.512 485.389)" fill="#d0e2f6"/>
+                                              <path id="Path_4169" data-name="Path 4169" d="M286.427,255.667a.75.75,0,1,0,.75.75.751.751,0,0,0-.75-.75" transform="translate(193.507 485.389)" fill="#d0e2f6"/>
+                                              <path id="Path_4170" data-name="Path 4170" d="M292.427,274.667a.75.75,0,1,0,.75.75.751.751,0,0,0-.75-.75" transform="translate(192.01 480.646)" fill="#d0e2f6"/>
+                                              <path id="Path_4171" data-name="Path 4171" d="M287.451,268.417a.75.75,0,0,0-1.5,0,5.786,5.786,0,0,0,2.318,4.489.75.75,0,1,0,.957-1.156,4.287,4.287,0,0,1-1.774-3.332" transform="translate(193.439 482.393)" fill="#d0e2f6"/>
+                                              <path id="Path_4172" data-name="Path 4172" d="M298.185,256.921a6.01,6.01,0,0,0-6-6h-1.5v-1.5a.75.75,0,0,0-1.5,0v1.5h-1.5a6.01,6.01,0,0,0-6,6,1.5,1.5,0,0,0,.75,1.292v5.461c0,6.181,6.946,8.847,7.241,8.957a.753.753,0,0,0,.525,0c.3-.11,7.241-2.776,7.241-8.957v-5.461a1.5,1.5,0,0,0,.75-1.292m-10.505-4.5h4.5a4.508,4.508,0,0,1,4.5,4.5H283.178a4.507,4.507,0,0,1,4.5-4.5m2.251,18.7c-1.191-.524-6-2.921-6-7.442v-5.253h12.006v5.253c0,4.521-4.812,6.918-6,7.442" transform="translate(194.506 487.136)" fill="#d0e2f6"/>
+                                              <line id="Line_40" data-name="Line 40" y1="26.237" x2="25.83" transform="translate(471.681 733.985)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              <ellipse id="Ellipse_35" data-name="Ellipse 35" cx="18.384" cy="18.384" rx="18.384" ry="18.384" transform="translate(466.053 728.925)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                            </g>
+                                          </svg>
+                                          
+                                             <p>Tree Nuts Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox7" />
+                                        <label for="myCheckbox7">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3160" data-name="Group 3160" transform="translate(-820 -751)">
+                                              <path id="Path_4205" data-name="Path 4205" d="M18.384,0A18.384,18.384,0,1,1,0,18.384,18.384,18.384,0,0,1,18.384,0Z" transform="translate(820.5 751.5)" fill="none" stroke="#d0e2f6" stroke-width="1"/>
+                                              <g id="Group_3159" data-name="Group 3159" transform="translate(267.689 18.742)">
+                                                <path id="Path_4203" data-name="Path 4203" d="M160.842,147.417a.75.75,0,1,0-.75.75.751.751,0,0,0,.75-.75" transform="translate(403.473 603.795)" fill="#d0e2f6"/>
+                                                <path id="Path_4204" data-name="Path 4204" d="M177.062,143.9a5.552,5.552,0,0,0,1.291-3.982.754.754,0,0,0-.22-.534.637.637,0,0,0-.534-.22,5.241,5.241,0,0,0-4.3,2.288,13.639,13.639,0,0,0-5.059-3.118,15.3,15.3,0,0,1,.433-2.74.749.749,0,0,0-.727-.933h0a7.772,7.772,0,0,0-5.358,2.628,4.853,4.853,0,0,1-1.661,1.259,14.539,14.539,0,0,0-6.464,5.471.751.751,0,0,0,0,.795,14.458,14.458,0,0,0,2.661,3.164.75.75,0,0,0,1-1.122,12.937,12.937,0,0,1-2.125-2.439,13.115,13.115,0,0,1,5.527-4.492,6.393,6.393,0,0,0,2.18-1.63,6.723,6.723,0,0,1,3.292-2.02,14.6,14.6,0,0,0-.265,2.581.749.749,0,0,0,.51.711,12.785,12.785,0,0,1,4.956,2.9,1.476,1.476,0,0,0,1.194.478,1.509,1.509,0,0,0,1.144-.651,3.784,3.784,0,0,1,2.281-1.536,3.544,3.544,0,0,1-.828,2.106,2.22,2.22,0,0,0,0,3.11,3.544,3.544,0,0,1,.828,2.106,3.78,3.78,0,0,1-2.287-1.544,1.488,1.488,0,0,0-2.328-.163,13.683,13.683,0,0,1-4.44,2.7.75.75,0,0,0-.369,1.056,3.744,3.744,0,0,1,.363.941,3.793,3.793,0,0,1-1.937-1.162.756.756,0,0,0-.6-.25l-.086,0a8.845,8.845,0,0,1-4.057-.868,6.622,6.622,0,0,0,2.37-5.125.75.75,0,0,0-1.5,0,5.151,5.151,0,0,1-2.686,4.559.75.75,0,0,0-.017,1.3,11.3,11.3,0,0,0,5.6,1.643h.1a5.275,5.275,0,0,0,3.653,1.5h0a.751.751,0,0,0,.75-.753,5.291,5.291,0,0,0-.314-1.766,12.9,12.9,0,0,0,4.248-2.767,5.273,5.273,0,0,0,4.316,2.284.744.744,0,0,0,.534-.22.752.752,0,0,0,.22-.534,5.552,5.552,0,0,0-1.291-3.982.729.729,0,0,1,0-1.035" transform="translate(404.721 606.791)" fill="#d0e2f6"/>
+                                                <line id="Line_48" data-name="Line 48" y1="26.263" x2="25.594" transform="translate(558.311 737.258)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              </g>
+                                            </g>
+                                          </svg>
+                                          
+                                             <p>Fish Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox8" />
+                                        <label for="myCheckbox8">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3162" data-name="Group 3162" transform="translate(-815.183 -743.006)">
+                                              <path id="Path_4205" data-name="Path 4205" d="M18.384,0A18.384,18.384,0,1,1,0,18.384,18.384,18.384,0,0,1,18.384,0Z" transform="translate(815.683 743.506)" fill="none" stroke="#d0e2f6" stroke-width="1"/>
+                                              <g id="Group_3160" data-name="Group 3160" transform="translate(616.244 652.207)">
+                                                <g id="Group_3158" data-name="Group 3158" transform="translate(210.195 98.05)">
+                                                  <g id="Group_3157" data-name="Group 3157">
+                                                    <path id="Path_4154" data-name="Path 4154" d="M291.622,136.671a4.589,4.589,0,0,0-1.5-3.334v-1.919a.75.75,0,0,0-1.5,0v1.919a4.589,4.589,0,0,0-1.5,3.334,4.64,4.64,0,0,0,1.778,3.584.751.751,0,0,0,.945,0,4.64,4.64,0,0,0,1.778-3.584m-2.251,1.96a2.937,2.937,0,0,1,0-3.921,2.937,2.937,0,0,1,0,3.921" transform="translate(-281.867 -130.667)" fill="#d0e2f6"/>
+                                                    <path id="Path_4155" data-name="Path 4155" d="M296.592,154.887l-.539.539a5.193,5.193,0,0,0-3.526,1.114,3.81,3.81,0,0,0-1.377,3.451.75.75,0,0,0,.68.655q.284.025.561.025a5.136,5.136,0,0,0,3.323-1.123,3.8,3.8,0,0,0,1.4-3.062l.537-.537a.75.75,0,1,0-1.061-1.061m-1.838,3.508a3.617,3.617,0,0,1-2.11.766,2.329,2.329,0,0,1,.844-1.469,3.618,3.618,0,0,1,2.11-.766,2.324,2.324,0,0,1-.844,1.469" transform="translate(-282.865 -136.658)" fill="#d0e2f6"/>
+                                                    <path id="Path_4156" data-name="Path 4156" d="M296.592,147.887l-.539.539a5.185,5.185,0,0,0-3.526,1.114,3.81,3.81,0,0,0-1.377,3.451.75.75,0,0,0,.68.655q.284.025.561.025a5.136,5.136,0,0,0,3.323-1.123,3.8,3.8,0,0,0,1.4-3.062l.537-.537a.75.75,0,0,0-1.061-1.061m-1.838,3.508a3.616,3.616,0,0,1-2.11.766,2.329,2.329,0,0,1,.844-1.468,3.618,3.618,0,0,1,2.11-.766,2.324,2.324,0,0,1-.844,1.468" transform="translate(-282.865 -134.91)" fill="#d0e2f6"/>
+                                                    <path id="Path_4157" data-name="Path 4157" d="M285.465,156.54a5.2,5.2,0,0,0-3.525-1.114l-.54-.539a.75.75,0,1,0-1.061,1.061l.537.537a3.8,3.8,0,0,0,1.4,3.062,5.136,5.136,0,0,0,3.323,1.123c.185,0,.372-.008.561-.025a.75.75,0,0,0,.68-.655,3.808,3.808,0,0,0-1.377-3.451m-2.226,1.855a2.324,2.324,0,0,1-.844-1.469,3.614,3.614,0,0,1,2.109.766,2.326,2.326,0,0,1,.845,1.469,3.617,3.617,0,0,1-2.11-.766" transform="translate(-280.119 -136.658)" fill="#d0e2f6"/>
+                                                    <path id="Path_4158" data-name="Path 4158" d="M285.465,149.54a5.19,5.19,0,0,0-3.526-1.114l-.539-.539a.75.75,0,0,0-1.061,1.061l.537.537a3.8,3.8,0,0,0,1.4,3.062,5.136,5.136,0,0,0,3.323,1.123c.185,0,.372-.008.561-.025a.75.75,0,0,0,.68-.655,3.808,3.808,0,0,0-1.377-3.451m-2.226,1.855a2.324,2.324,0,0,1-.844-1.468,3.614,3.614,0,0,1,2.109.766,2.326,2.326,0,0,1,.845,1.468,3.616,3.616,0,0,1-2.11-.766" transform="translate(-280.119 -134.91)" fill="#d0e2f6"/>
+                                                    <path id="Path_4159" data-name="Path 4159" d="M285.465,140.543a5.2,5.2,0,0,0-3.489-1.116,1.818,1.818,0,0,1-.356-1.066v-4.943a.75.75,0,1,0-1.5,0v4.943a3.322,3.322,0,0,0,.76,2.084,3.8,3.8,0,0,0,1.4,3.106,5.136,5.136,0,0,0,3.323,1.123c.185,0,.372-.008.561-.025a.75.75,0,0,0,.68-.655,3.808,3.808,0,0,0-1.377-3.451m-2.226,1.855a2.324,2.324,0,0,1-.844-1.469,3.614,3.614,0,0,1,2.109.766,2.326,2.326,0,0,1,.845,1.468,3.617,3.617,0,0,1-2.11-.766" transform="translate(-280.119 -131.166)" fill="#d0e2f6"/>
+                                                  </g>
+                                                  <path id="Path_4160" data-name="Path 4160" d="M297.123,132.667a.75.75,0,0,0-.75.75v4.943a1.818,1.818,0,0,1-.356,1.066,5.184,5.184,0,0,0-3.488,1.116,3.81,3.81,0,0,0-1.377,3.451.75.75,0,0,0,.68.655q.284.025.561.025a5.136,5.136,0,0,0,3.323-1.123,3.8,3.8,0,0,0,1.4-3.106,3.322,3.322,0,0,0,.76-2.084v-4.943a.751.751,0,0,0-.75-.75m-2.369,9.731a3.616,3.616,0,0,1-2.11.766,2.329,2.329,0,0,1,.844-1.468,3.618,3.618,0,0,1,2.11-.766,2.324,2.324,0,0,1-.844,1.469" transform="translate(-282.865 -131.166)" fill="#d0e2f6"/>
+                                                </g>
+                                                <line id="Line_38" data-name="Line 38" y1="26.67" x2="25.76" transform="translate(204.943 95.799)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              </g>
+                                            </g>
+                                          </svg>
+                                          
+                                             <p>Gluten Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox9" />
+                                        <label for="myCheckbox9">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3167" data-name="Group 3167" transform="translate(-799.5 -749)">
+                                              <g id="Group_3166" data-name="Group 3166" transform="translate(511.248 659.201)">
+                                                <path id="Path_4" data-name="Path 4" d="M410.48,142.667a3,3,0,1,0,3,3,3,3,0,0,0-3-3m0,4.5a1.5,1.5,0,1,1,1.5-1.5,1.5,1.5,0,0,1-1.5,1.5" transform="translate(-103.715 -35.612)" fill="#d0e2f6"/>
+                                                <path id="Path_5" data-name="Path 5" d="M415.478,137.669a3,3,0,1,0,3-3,3,3,0,0,0-3,3m4.5,0a1.5,1.5,0,1,1-1.5-1.5,1.5,1.5,0,0,1,1.5,1.5" transform="translate(-105.712 -33.615)" fill="#d0e2f6"/>
+                                                <path id="Path_6" data-name="Path 6" d="M402.48,150.667a3,3,0,1,0,3,3,3,3,0,0,0-3-3m0,4.5a1.5,1.5,0,1,1,1.5-1.5,1.5,1.5,0,0,1-1.5,1.5" transform="translate(-101.718 -37.609)" fill="#d0e2f6"/>
+                                                <path id="Path_7" data-name="Path 7" d="M418.74,130.667h-5.253a6.01,6.01,0,0,0-5.892,4.849,1.538,1.538,0,0,1-1.2,1.254,6.026,6.026,0,0,0-4.81,4.809,1.537,1.537,0,0,1-1.254,1.205,6.01,6.01,0,0,0-4.849,5.892v5.253a.75.75,0,0,0,.75.75h5.253a6.011,6.011,0,0,0,5.892-4.849,1.537,1.537,0,0,1,1.2-1.254,6.027,6.027,0,0,0,4.81-4.809,1.538,1.538,0,0,1,1.254-1.205,6.011,6.011,0,0,0,4.849-5.892v-5.253a.75.75,0,0,0-.75-.75m-.75,6a4.507,4.507,0,0,1-3.636,4.419,3.029,3.029,0,0,0-2.443,2.406,4.518,4.518,0,0,1-3.606,3.6,3.029,3.029,0,0,0-2.406,2.442,4.507,4.507,0,0,1-4.419,3.636h-4.5v-4.5a4.507,4.507,0,0,1,3.636-4.419,3.03,3.03,0,0,0,2.443-2.406,4.516,4.516,0,0,1,3.606-3.606,3.03,3.03,0,0,0,2.406-2.443,4.507,4.507,0,0,1,4.419-3.635h4.5Z" transform="translate(-100.719 -32.617)" fill="#d0e2f6"/>
+                                                <line id="Line_3" data-name="Line 3" x1="25.513" y1="25.513" transform="translate(294.009 95.799)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              </g>
+                                              <ellipse id="Ellipse_43" data-name="Ellipse 43" cx="18.384" cy="18.384" rx="18.384" ry="18.384" transform="translate(800 749.5)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                            </g>
+                                          </svg>
+                                          
+                                             <p>Soy Free</p>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <input type="checkbox" id="myCheckbox10" />
+                                        <label for="myCheckbox10">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="37.769" height="37.769" viewBox="0 0 37.769 37.769">
+                                            <g id="Group_3168" data-name="Group 3168" transform="translate(-1133 -466.128)">
+                                              <path id="Path_8" data-name="Path 8" d="M418.8,265.071l-4.625-8.589v-5.1a1.876,1.876,0,0,0-.375-3.714h-6.753a1.876,1.876,0,0,0-.375,3.714v5.1l-4.625,8.588a5.277,5.277,0,0,0-.628,2.491v1.866a2.254,2.254,0,0,0,2.251,2.251h13.507a2.254,2.254,0,0,0,2.251-2.251v-1.866a5.272,5.272,0,0,0-.628-2.49m-11.753-15.9H413.8a.375.375,0,0,1,0,.75h-.375a.75.75,0,0,0-.75.75v6a.747.747,0,0,0,.09.356l1.327,2.464a2.21,2.21,0,0,1-1.855-.074,3.678,3.678,0,0,0-3.626,0,2.209,2.209,0,0,1-1.855.074l1.327-2.464a.748.748,0,0,0,.09-.356v-5.253h2.251a.75.75,0,1,0,0-1.5h-3.377a.375.375,0,0,1,0-.75m10.88,20.26a.751.751,0,0,1-.75.75H403.665a.751.751,0,0,1-.75-.75v-1.866a3.754,3.754,0,0,1,.449-1.779l2.677-4.974a3.706,3.706,0,0,0,3.377-.13,2.173,2.173,0,0,1,2,0,3.385,3.385,0,0,0,1.813.495,3.485,3.485,0,0,0,1.565-.362l2.677,4.972a3.758,3.758,0,0,1,.449,1.778Z" transform="translate(741.586 224.965)" fill="#d0e2f6"/>
+                                              <line id="Line_4" data-name="Line 4" y1="26.237" x2="25.673" transform="translate(1139.5 471.563)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                              <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="18.384" cy="18.384" rx="18.384" ry="18.384" transform="translate(1133.5 466.628)" fill="none" stroke="#d0e2f6" stroke-miterlimit="10" stroke-width="1"/>
+                                            </g>
+                                          </svg>
+                                          
+                                             <p>GMO Free</p>
+                                        </label>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devider"></div>
+                        <div class="grid-row">
+                            <div class="select">
+                                <div class="wrapper-dropdown" id="dropdown">
+                                    <span class="selected-display" id="destination">Pickup Time</span>
+                                    <img src="./assets/images/Path 4117.png" alt="" class="arrow" width="16" height="12">
+                                    <ul class="dropdown">
+                                      <li class="item">Breakfast</li>
+                                      <li class="item">Lunch</li>
+                                      <li class="item">Dinner</li>
+                                      <li class="item" data-bs-toggle="modal" data-bs-target="#exampleModal">Custom Time</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="forms">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Recurrent Order
+                                    </label>
+                                </div>
+                                <div class="select">
+                                    <div class="wrapper-dropdown" id="dropdown">
+                                        <span class="selected-display" id="destination">Frequency</span>
+                                        <img src="./assets/images/Path 4117.png" alt="" class="arrow" width="16" height="12">
+                                        <ul class="dropdown">
+                                          <li class="item">One Time</li>
+                                          <li class="item">Daily</li>
+                                          <li class="item">Weekly </li>
+                                          <li class="item">Fortnightly</li>
+                                          <li class="item">Monthly</li>
+                                          <li class="item">Yearly</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <button class="btn btn-secondary">Add more</button>
+                            <button class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>  
+                <div class="top-logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+            </div>
+            <!-- Modal for custom time-->
+            <div class="modal fade custom-time" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                      <div class="customtimepick">
+                          <h2>Customize pick up time</h2>
+                          <div class="calemder">
+                            <button class="btn btn-week">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42">
+                                <g id="Group_3279" data-name="Group 3279" transform="translate(-238 -521)">
+                                  <rect id="Rectangle_4079" data-name="Rectangle 4079" width="46" height="42" rx="21" transform="translate(238 521)" fill="#193b69"/>
+                                  <text id="M" transform="translate(253 547)" fill="#fff" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">M</tspan></text>
+                                </g>
+                              </svg>                              
+                            </button>
+                            <button class="btn btn-week">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42">
+                                <g id="Group_3279" data-name="Group 3279" transform="translate(-238 -521)">
+                                  <rect id="Rectangle_4079" data-name="Rectangle 4079" width="46" height="42" rx="21" transform="translate(238 521)" fill="#193b69"/>
+                                  <text id="M" transform="translate(256 547)" fill="#fff" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">T</tspan></text>
+                                </g>
+                              </svg>
+                                                           
+                            </button>
+                            <button class="btn btn-week">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42">
+                                <g id="Group_3279" data-name="Group 3279" transform="translate(-238 -521)">
+                                  <rect id="Rectangle_4079" data-name="Rectangle 4079" width="46" height="42" rx="21" transform="translate(238 521)" fill="#193b69"/>
+                                  <text id="M" transform="translate(253 547)" fill="#fff" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">W</tspan></text>
+                                </g>
+                              </svg>                              
+                            </button>
+                            <button class="btn btn-week">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42">
+                                <g id="Group_3279" data-name="Group 3279" transform="translate(-238 -521)">
+                                  <rect id="Rectangle_4079" data-name="Rectangle 4079" width="46" height="42" rx="21" transform="translate(238 521)" fill="#193b69"/>
+                                  <text id="M" transform="translate(253 547)" fill="#fff" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Th</tspan></text>
+                                </g>
+                              </svg>                              
+                            </button>
+                            <button class="btn btn-week">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42">
+                                <g id="Group_3279" data-name="Group 3279" transform="translate(-238 -521)">
+                                  <rect id="Rectangle_4079" data-name="Rectangle 4079" width="46" height="42" rx="21" transform="translate(238 521)" fill="#193b69"/>
+                                  <text id="M" transform="translate(256 547)" fill="#fff" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">F</tspan></text>
+                                </g>
+                              </svg>                              
+                            </button>
+                            <button class="btn btn-week">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42">
+                                <g id="Group_3279" data-name="Group 3279" transform="translate(-238 -521)">
+                                  <rect id="Rectangle_4079" data-name="Rectangle 4079" width="46" height="42" rx="21" transform="translate(238 521)" fill="#193b69"/>
+                                  <text id="M" transform="translate(256 547)" fill="#fff" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">S</tspan></text>
+                                </g>
+                              </svg>                              
+                            </button>
+                            <button class="btn btn-week">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="42" viewBox="0 0 46 42">
+                                <g id="Group_3279" data-name="Group 3279" transform="translate(-238 -521)">
+                                  <rect id="Rectangle_4079" data-name="Rectangle 4079" width="46" height="42" rx="21" transform="translate(238 521)" fill="#193b69"/>
+                                  <text id="M" transform="translate(256 547)" fill="#fff" font-size="17" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">S</tspan></text>
+                                </g>
+                              </svg>                              
+                            </button>
+                          </div>
+                          <div class="time-calender">
+                              <div class="time-input-row">
+                                <div class="start-time custom-select">
+                                  <input type="text" id="selectedOption1" placeholder="Start Time" readonly>
+                                  <div class="time-box">
+                                    <ul class="custom-options1" id="time1">
+                                      <li data-value="1">14:00</li>
+                                      <li data-value="2">14:30</li>
+                                      <li data-value="3">15:00</li>
+                                      <li data-value="4">15:30</li>
+                                      <li data-value="5">16:00</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="end-time custom-select">
+                                  <input type="text" id="selectedOption2" placeholder="End Time" readonly>
+                                  <div class="time-box">
+                                    <ul class="custom-options2" id="time2">
+                                      <li data-value="1">14:00</li>
+                                      <li data-value="2">14:30</li>
+                                      <li data-value="3">15:00</li>
+                                      <li data-value="4">15:30</li>
+                                      <li data-value="5">16:00</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <button type="button" class=" btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Save</button>
+                      </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+    </section>
+    <script src="./assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

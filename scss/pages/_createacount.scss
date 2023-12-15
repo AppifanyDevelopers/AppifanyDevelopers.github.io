@@ -1,0 +1,498 @@
+.inner-container{
+    max-width: 733px;
+    margin: 0 auto;
+    padding-top: 73px;
+    padding-bottom: 62px;
+    @include tablet{
+        padding-bottom: 0px;
+    }
+    @include mobile{
+        padding-top:40px;
+    }
+    .row{
+        gap: 30px !important;
+    }
+    .logo{
+        margin-bottom: 35px;
+        @include middesktop{
+            text-align: center;
+        }
+        @include tablet{
+            text-align: center;
+        }
+        @include mobile{
+            margin-bottom: 0px;
+            text-align: center;
+        }
+    }
+    .main-heading{
+        margin-bottom: 29px;
+        h1{
+            font-size: 20px;
+            line-height: 27px;
+            font-weight: 500;
+            color: $sky-blue;
+        }
+    }
+    .form-creataccount{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        align-items: flex-start;
+        @include mobile{
+            gap: 24px;
+        }
+        .form-box{
+            max-width: 316px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 19px;
+            @include mobile{
+                max-width: 100%;
+            }
+        }
+        .image-galry{
+            max-width: 316px;
+            width: 100%; 
+            @include mobile{
+                max-width: 100%;
+            }
+            .img-prev{
+                display: flex;
+                flex-direction: column;
+                row-gap: 26px;
+            }
+        }
+    }
+
+.avatar-upload {
+    position: relative;
+    .avatar-edit {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        top: 0;
+        @include mobile{
+            left: 50%;
+            transform: translate(-50%);
+            width: 100%;
+        }
+        input {
+            display: none;
+            + label {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 316px;
+                height: 190px;
+                margin-bottom: 0;
+                border-radius: $radius-24;
+                background: $them-blue;
+                color: $sky-blue;
+                font-size: 20px;
+                line-height: 27px;
+                flex-direction: column;
+                gap: 13px;
+                cursor: pointer;
+                font-weight: normal;
+                transition: all .2s ease-in-out;
+                img{
+                    width: 42px;
+                    height: 40px;
+                }
+                @include mobile{
+                    width: 100%;
+                    height: 190px !important;
+                }
+            }
+        }
+    }
+    .avatar-preview {
+        width: 316px;
+        height: 190px;
+        position: relative;
+        border-radius: $radius-24;
+        overflow: hidden;
+        @include mobile{
+            width: 100%;
+        }
+        > div {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+.text-area{
+    width: 100%;
+    
+    textarea{
+        width: 100%;
+        height: 92px;
+        padding-top: 17px;
+    }
+}
+.btn-box{
+    display: flex;
+    justify-content: end;
+    margin-top: 31px;
+    @include mobile{
+        margin-top: 0px;
+    }
+    .btn {
+        max-width: 158px;
+        height: 65px;
+        width: 100%;
+    }
+}
+}
+.top-logo{
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+
+    }
+    img{
+        width: 289px;
+    }
+}
+.mobile-logo-account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    margin-bottom: 40px;
+    @include tablet{
+        height: 100%;
+    }
+    @include mobile{
+        height: 100%;
+    }
+        img{
+            display: none;
+            @include tablet{
+                display: block;
+            }
+            @include mobile{
+                display: block;
+                width: 85px;
+            }
+        }
+}
+
+// set pin
+
+.pin-box{
+    max-width: 430px;
+    width: 100%;
+    margin:  0 auto;
+    text-align: start;
+    h3{
+        font-size: 20px;
+        line-height: 27px;
+        color: $sky-blue;
+        padding-left: 8px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 27px;
+        color: $white;
+        margin-top: 14px;
+        margin-bottom: 27px;
+        padding-left: 8px;
+    }
+    .confirm{
+        margin-top: 35px;
+        margin-bottom: 27px;
+    }
+.pin-code{ 
+    padding: 0; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+  } 
+   
+  .pin-code input { 
+    border: none; 
+    text-align: center; 
+    max-width: 98px;
+    width: 100%;
+    height:65px;
+    font-size: 20px; 
+    line-height: 27px;
+    background-color:$them-blue;
+    border-radius: $radius-24;
+    color: $white;
+    @include placeholder{
+        color: $white !important;
+    }
+  } 
+  
+  
+  
+  .pin-code input:focus { 
+    border: 1px solid #573D8B;
+    outline:none;
+  } 
+  
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+}
+
+.main-heading{
+    width: 100%;
+    max-width: 100%;
+    h1{
+        font-size: 20px;
+        line-height: 27px;
+        color: $sky-blue;
+    }
+}
+
+//timetable
+.tabel-container{
+    max-width: 1092px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    @include middesktop{
+        max-width: 994px;
+    }
+    @include tablet{
+        max-width: 514px;
+    }
+    @include mobile{
+        max-width: 350px;
+    }
+    .btn-box{
+        margin-bottom: 90px;
+        .btn{
+            max-width: 158px;
+            width: 100%;
+            height: 65px;
+        }
+        .btn-secondary{
+            max-width: 204px;
+        }
+    }
+    
+}
+.timetable{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 67px;
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 72px;
+    @include tablet{
+        justify-content: center;
+    }
+    @include tablet{
+        gap: 24px;
+    }
+    &::after{
+        content: "";
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        background-color: $sky-blue;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @include tablet{
+            display: none;
+        }
+    }
+    .box{
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 26px;
+        @include middesktop{
+            max-width: 450px;
+        }
+    }
+
+    .time-row{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 23px;
+        span{
+            color: $sky-blue;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 300;
+        }
+        .form-check{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            .form-check-input{
+                background-color: $them-blue;
+                border: unset;
+                width: 32px;
+                height: 29px;
+                box-shadow: unset;
+                border-radius: $radius-24;
+                margin-top: 0px;
+            }
+            .form-check-label{
+                font-size: 18px;
+                line-height: 24px;
+                color: $sky-blue;
+                width: 92px;
+                font-weight: 500;
+            }
+        }
+        .input{
+            max-width: 214px;
+            width: 100%;
+            input{
+                height: 48px;
+                border-radius: $radius-12;
+            }
+        }
+        .select-row{
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            .select{
+                width: 145px;
+                @include middesktop{
+                    width: 124px;
+                } 
+                @include mobile{
+                    width: 145px;
+                }
+                 
+                .wrapper-dropdown{
+                    height: 48px;
+                    border-radius: $radius-12;
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: $sky-blue;
+                    @include middesktop{
+                        padding-left: 25px;
+                    }
+                    span{
+                        color: $sky-blue;
+                        font-size: 15px;
+                        line-height: 20px;
+                        font-weight: 300;
+                        @include middesktop{
+                            font-size: 13px;
+                        }
+                    }
+                    .arrow{
+                        margin-left: 0;
+                        margin-right: 20px;
+                        @include middesktop{
+                            width: 12px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+.form-check-input{
+    background-color: $blue;
+    border: unset;
+    width: 32px;
+    height: 29px;
+    box-shadow: unset;
+    border-radius: $radius-24;
+    margin-top: 0px;
+}
+
+.form-check-input:checked[type=checkbox]{
+    background-image:url(#{$imgPath}/Group\ 2906.png);
+    background-size: 18px 13px;
+}
+.form-select{
+    background-image: url(#{$imgPath}/Group\ 2907.png);
+    background-size: 17px 10px;
+}
+.btn-box{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 72px;
+    align-items: end;
+}
+
+.setpickuptime{
+    .box{
+        .time-row{
+            @include mobile{
+                justify-content: end;
+            }
+            .input{
+                @include middesktop{
+                    max-width: 150px;
+                }
+                @include mobile{
+                    max-width: calc(100% - 55px);
+                }
+                input{
+                    font-size: 15px;
+                    padding: 13px;
+                    @include middesktop{
+                        font-size: 13px;
+                    }
+                    @include placeholder{
+                        font-size: 15px;
+                        @include middesktop{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+          .select-row{
+            gap: 8px;
+            .select{
+                width: 99px;
+                .wrapper-dropdown{
+                    font-size: 13px;
+                    padding-left: 13px;
+                    padding-right: 6px;
+                    span{
+                        font-size: 13px;
+                    }
+                    .arrow{
+                        margin-right: 5px;
+                        width: 10px;
+                        height: 8px;
+                    }
+                }
+            }
+          }  
+        }
+    }
+}

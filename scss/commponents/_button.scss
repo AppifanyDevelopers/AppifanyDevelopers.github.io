@@ -1,0 +1,63 @@
+.btn-primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius-24;
+    background-color: $cream-orange;
+    border: unset;
+    font-size: 20px;
+    line-height: 27px;
+    color: $dark-blue;
+    @include hover-focus-active{
+        background-color: $light-blue;
+        
+    }
+}
+// FORMS 
+//INPUT 
+.form-control{
+    height: 65px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 27px;
+    color: $white;
+    background-color: $them-blue;
+    border: unset;
+    border-radius: $radius-24;
+    padding-left: 31px;
+    @include placeholder{
+        font-size: 20px;
+        line-height: 27px; 
+        color: $white !important;
+    }
+    @include hover-focus-active{
+        background-color: unset;
+        color: $white;
+        box-shadow: unset;
+        border: 1px solid $white;
+    }
+}
+.link-btn{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    color: $sky-blue;
+    @include hover-focus-active{
+        color: $white;
+    }
+}
+.btn-secondary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius-24;
+    background-color: $sky-blue;
+    border: unset;
+    font-size: 20px;
+    line-height: 27px;
+    color: $dark-blue;
+    @include hover-focus-active{
+        border:  1px solid $white;
+        background-color: transparent;
+    }
+}
