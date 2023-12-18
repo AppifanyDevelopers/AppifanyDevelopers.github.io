@@ -16,9 +16,17 @@
     }
     .container{
         position: relative;
+        @include tablet{
+            padding-bottom: 50px; 
+        }
+        @include mobile{
+            padding: 0px 20px;
+            padding-bottom: 50px;
+        }
         .row{
             gap: 149px;
             @include mobile{
+                
                 gap: 20px;
             }
             .logo{
@@ -267,6 +275,7 @@
                         gap: 11px;
                         justify-content: center;
                         margin-bottom: 39px;
+                        flex-wrap: wrap;
                         .btn-week{
                             box-shadow: none;
                             border: none;

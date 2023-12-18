@@ -130,6 +130,10 @@
                         font-weight: 500;
                         color: $cream-orange;
                         // width: 50%;
+                        @include mobile{
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
                     }
                     .btn-box{
                         display: flex;
@@ -138,6 +142,9 @@
                         justify-content: end;
                         flex-direction: row;
                         gap: 39px;
+                        @include mobile{
+                            gap: 10px;
+                        }
                         .acrn-btn{
                             font-size: 12px;
                             line-height: 16px;
@@ -145,6 +152,9 @@
                             background-color: unset;
                             @include hover-focus-active{
                                 color: $cream-orange;
+                            }
+                            @include mobile{
+                                width: auto;
                             }
                         }
                         .btn-primary{
@@ -174,6 +184,9 @@ select{
             height: 33px;
             font-size: 12px;
             line-height: 16px;
+            @include mobile{
+                max-width: 100px;
+            }
         }
     }
   .deals-row{
@@ -183,6 +196,12 @@ select{
         display: flex;
         flex-direction: column;
         gap: 15px;
+        @include middesktop{
+            max-width: 100%;
+        }
+        @include tablet{
+            max-width: 100%;
+        }
         .top-details-cards{
             margin-top: 0px;
         }
@@ -192,11 +211,24 @@ select{
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                flex-wrap: wrap;
                 justify-content: space-between;
+                @include middesktop{
+                    max-width: 100%;
+                }
+                @include tablet{
+                    max-width: 100%;
+                }
                 .btn-primary{
                     height: 65px;
                     max-width: 171px;
                     width: 100%;
+                    @include mobile{
+                        height: 57px;
+                        max-width: 100%;
+                        width: 100%;
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -216,9 +248,17 @@ select{
             } 
          }
     }
+    .today-deals{
+       @include middesktop{
+        max-width: 100% !important;
+       }
+    }
   }  
 }
-
+.modal{
+    padding: 0 20px;
+    padding-left: 20px !important;
+}
 // notification pop up
 
 .notifiaction{
@@ -274,6 +314,12 @@ select{
     right: 40px;
     z-index: 1000;
     transition: opacity 0.5s ease-in-out;
+    @include middesktop{
+        right: 0px;
+    }
+    @include tablet{
+        right: 0px;
+    }
     @include mobile{
         right: 0px;
         top: 50px;

@@ -52,9 +52,9 @@ SCSS file for all mixin elements.
 }
 
 // Source mixins
-$mobile:576px;
+$mobile:767px;
 $tablet-width: 992px;
-$mid-desktop-width: 1200px;
+$mid-desktop-width: 1250px;
 $desktop-width: 1400px;
 $largeDesktop-width:1600px;
 @mixin mobile {
