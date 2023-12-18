@@ -88,11 +88,3 @@ $largeDesktop-width:1600px;
 
 // Usage
 
-@media(min-width: 2000px){
-    .login-section.h-100 {
-        height: 100vh !important;
-    }
-    .login-section.opacity-high.h-100 {
-        height: 100vh !important;
-    }
-}

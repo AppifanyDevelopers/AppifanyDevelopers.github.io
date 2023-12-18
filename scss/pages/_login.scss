@@ -1,13 +1,14 @@
-
-.login-section{
-    height: 100vh;
-    position: relative;
+body{
     background-image: url(#{$imgPath}/pexels-taryn-elliott-4099237.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.login-section{
+    height: 100vh;
+    position: relative;
     &::before{
-        position: absolute;
+        position: fixed;
         height: 100%;
         width: 100%;
         content: "";
