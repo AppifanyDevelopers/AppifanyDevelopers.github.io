@@ -1,9 +1,8 @@
-body{
+.body{
     background-image: url(#{$imgPath}/pexels-taryn-elliott-4099237.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: #F8F8F8;
 }
 .login-section{
     height: 100vh;
