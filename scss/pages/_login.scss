@@ -1,11 +1,11 @@
 
-
 .login-section{
+    height: 100vh;
+    position: relative;
     background-image: url(#{$imgPath}/pexels-taryn-elliott-4099237.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
+    background-attachment: fixed;
     &::before{
         position: absolute;
         height: 100%;
@@ -103,9 +103,10 @@
         }
         .text-white{
             color: $white;
-            max-width: 225px;
+            // max-width: 225px;
             margin: 0 auto;
-            padding-bottom: 15px;
+            // padding-bottom: 15px;
+            text-transform: uppercase;
         }
         .light{
             color: $cream-orange;
@@ -114,7 +115,11 @@
     }
  }   
 }
-
+.main-heading{
+    h1{
+        text-transform: uppercase;
+    }
+}
 .slider-modal{
     margin-top: 84px;
     @include mobile{

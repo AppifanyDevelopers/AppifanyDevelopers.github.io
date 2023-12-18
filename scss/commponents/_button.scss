@@ -8,9 +8,11 @@
     font-size: 20px;
     line-height: 27px;
     color: $dark-blue;
+    text-transform: uppercase;
     @include hover-focus-active{
         background-color: $light-blue;
-        
+        box-shadow: unset;
+        outline: unset;
     }
 }
 // FORMS 
@@ -56,6 +58,7 @@
     font-size: 20px;
     line-height: 27px;
     color: $dark-blue;
+    text-transform: uppercase;
     @include hover-focus-active{
         border:  1px solid $white;
         background-color: transparent;
