@@ -287,6 +287,15 @@
                             border: none;
                             width: 46px;
                             height: 42px;
+                            @include hover-focus-active{
+                                
+                                svg g rect{
+                                    fill:#D0E2F6;
+                                }
+                                svg g text{
+                                    fill: #0E1F3B;
+                                }
+                            }
                             
                         }
                     }
@@ -362,4 +371,55 @@
             }
         }
     }
+}
+.calemder{
+    ul {
+        list-style-type: none;
+        max-width: auto;
+        padding: 0;
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      li {
+        display: inline-block;
+      }
+      
+      input[type="checkbox"][id^="checkbox"] {
+        display: none;
+      }
+      
+      label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+      }
+      
+      
+      
+      label span {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        width: 46px;
+        border: 1px solid #707070;
+        background-color: #193B69;
+        border-radius: $radius-24;
+        transition-duration: 0.2s;
+        box-sizing: border-box;
+        font-size: 17px;
+        line-height: 22px;
+        color: #FFFFFF;
+      }
+      
+      :checked + label span {
+        border-color: #F8B097;
+        font-weight: bold;
+        color: #F8B097;
+      }
+      
 }

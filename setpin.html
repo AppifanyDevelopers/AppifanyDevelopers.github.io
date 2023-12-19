@@ -24,17 +24,17 @@
                                 <h3>Set pin</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                 <div class="pin-code">
-                                    <input type="number" maxlength="1" placeholder="-" autofocus>
-                                    <input type="number" maxlength="1" placeholder="-">
-                                    <input type="number" maxlength="1" placeholder="-">
-                                    <input type="number" maxlength="1" placeholder="-">
+                                    <input type="number" maxlength="1" placeholder="-" pattern="[0-9]"  oninput="moveToNext(this, 'nextInput')">
+                                    <input type="number" maxlength="1" placeholder="-" pattern="[0-9]" id="nextInput" oninput="moveToNext(this, 'nextInput2')">
+                                    <input type="number" maxlength="1" placeholder="-" pattern="[0-9]" id="nextInput2" oninput="moveToNext(this, 'nextInput3')">
+                                    <input type="number" maxlength="1" placeholder="-"  pattern="[0-9]" id="nextInput3" oninput="moveToNext(this, 'nextInput4')">
                                 </div>
                                 <h3 class="confirm">Set pin</h3>
                                 <div class="pin-code">
-                                    <input type="number" maxlength="1" placeholder="-" autofocus>
-                                    <input type="number" maxlength="1" placeholder="-">
-                                    <input type="number" maxlength="1" placeholder="-">
-                                    <input type="number" maxlength="1" placeholder="-">
+                                    <input type="number" maxlength="1" placeholder="-" pattern="[0-9]" id="nextInput4" oninput="moveToNext(this, 'nextInput5')">
+                                    <input type="number" maxlength="1" placeholder="-" pattern="[0-9]" id="nextInput5" oninput="moveToNext(this, 'nextInput6')">
+                                    <input type="number" maxlength="1" placeholder="-" pattern="[0-9]" id="nextInput6" oninput="moveToNext(this, 'nextInput7')">
+                                    <input type="number" maxlength="1" placeholder="-"  pattern="[0-9]" id="nextInput7" oninput="moveToNext(this, 'nextInput8')">
                                 </div>
                             </div>
                         </div>
@@ -53,5 +53,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/script.js"></script>
+    <script>
+        function moveToNext(currentInput, nextInputId) {
+            const input = currentInput.value;
+            const maxLength = currentInput.maxLength;
+
+            if (input.length >= maxLength) {
+                if (nextInputId) {
+                document.getElementById(nextInputId).focus();
+                } else {
+                currentInput.blur(); // Remove focus after the last input
+                }
+            }
+
+            if (input.length >= 1) {
+                currentInput.value = input.slice(0, 1); // Take only the last entered character
+            }
+            }
+
+    </script>
 </body>
 </html>
