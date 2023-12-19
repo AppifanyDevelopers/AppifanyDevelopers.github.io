@@ -74,6 +74,17 @@
         border:  1px solid $white;
         background-color: transparent;
     }
+    &:active{
+        background-color: $sky-blue;
+        border-color: unset;
+        color: $dark-blue;
+    }
+    &:focus{
+        background-color: $sky-blue;
+        border-color: unset;
+        color: $dark-blue;
+        box-shadow: unset;
+    }
     
 }
 .btn-gray{
